@@ -11,9 +11,7 @@ layout: default
         {% endif %}
         <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--9-col-tablet mdl-cell--4-col-phone">
           <div class="mdl-card__supporting-text">
-                <a href="{{post.url | prepend: site.baseurl}}">
-            <h4>{{post.title}}</h4>
-                </a>
+              <h4><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h4>
             <p>{{post.description}}</p>
              <div class="action">{{ post.date | date: '%B %d, %Y' }}</div> 
           </div> 
