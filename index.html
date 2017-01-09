@@ -4,8 +4,8 @@ layout: default
 
 <div id="container" class="cols">
     {% for post in site.posts %}
-    <a href="{{post.url | prepend: site.baseurl}}">
-      <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+    <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+      <a href="{{post.url | prepend: site.baseurl}}">
         {% if post.img %}
           <img class="mdl-card-media mdl-cell--3-col-desktop mdl-cell--9-col-tablet mdl-cell--4-col-phone" src={{ "/images/" | prepend: site.baseurl | append: post.img }} border="0" alt="{{post.title}}">
         {% endif %}
@@ -15,8 +15,8 @@ layout: default
             <p>{{post.description}}</p>
              <div class="action">{{ post.date | date: '%B %d, %Y' }}</div> 
           </div> 
-         </div> 
-      </section>
-    </a>
+         </div>
+       </a>
+    </section>
    {% endfor %}
 </div>
