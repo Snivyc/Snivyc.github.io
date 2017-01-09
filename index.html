@@ -12,7 +12,7 @@ layout: default
           <div class="mdl-card__supporting-text">
             <h4><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h4>
             <p>{{post.description}}</p>
-            <div class="action">{{ post.date | date: '%Y %B, %d' }}</div> 
+            <div class="action">{{ post.date | date: '%Y %B %d' }}</div> 
           </div> 
          </div>
         {% else %}
@@ -20,7 +20,7 @@ layout: default
           <div class="mdl-card__supporting-text">
             <h4><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h4>
             <p>{{post.description}}</p>
-            <div class="action">{{ post.date | date: '%Y %B, %d' }}</div> 
+            <div class="action">{{ post.date | date: '%Y %B %d' }}</div> 
           </div> 
          </div>
         {% endif %}
