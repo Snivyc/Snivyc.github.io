@@ -8,14 +8,22 @@ layout: default
 
         {% if post.img %}
           <img class="mdl-card-media mdl-cell--3-col-desktop mdl-cell--9-col-tablet mdl-cell--4-col-phone" src={{ "/images/" | prepend: site.baseurl | append: post.img }} border="0" alt="{{post.title}}">
-        {% endif %}
         <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--9-col-tablet mdl-cell--4-col-phone">
           <div class="mdl-card__supporting-text">
-              <h4><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h4>
+            <h4><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h4>
             <p>{{post.description}}</p>
-             <div class="action">{{ post.date | date: '%B %d, %Y' }}</div> 
+            <div class="action">{{ post.date | date: '%Y %B, %d' }}</div> 
           </div> 
          </div>
+        {% else %}
+        <div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--4-col-phone">
+          <div class="mdl-card__supporting-text">
+            <h4><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h4>
+            <p>{{post.description}}</p>
+            <div class="action">{{ post.date | date: '%Y %B, %d' }}</div> 
+          </div> 
+         </div>
+        {% endif %}
 
     </section>
    {% endfor %}
