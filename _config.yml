@@ -1,11 +1,11 @@
 
 title: ChenTianhao's blog
 desctiption: Karna is a responsive jekyll theme which includes pinterest like pins.
-url: https://snivyc.github.io/karna/
+url: https://snivyc.github.io/mdl/
 permalink: ':title/'
 
 markdown: kramdown
-baseurl: "/karna"
+baseurl: "/mdl"
 
 
 sass:
