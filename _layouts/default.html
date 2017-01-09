@@ -24,20 +24,17 @@ layout: compress
           </button>
         </div>
       </header>
-    <main class="mdl-layout__content">
-<div id="main">
+  <main class="mdl-layout__content">
+    <div class="mdl-layout__tab-panel is-active" id="overview">
 
 
+      {{content}}
 
 
-{{content}}
+      {% include footer.html %}
 
-
-
-{% include footer.html %}
-
-</div>
-      </main>
     </div>
+  </main>
+</div>
 </body>
 </html>
