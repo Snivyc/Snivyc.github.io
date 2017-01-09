@@ -15,9 +15,12 @@
  */
 
 html, body {
-  font-family: 'Roboto', 'Microsoft YaHei','Helvetica', sans-serif;
+  font-family: 'Roboto', 'Source Han Sans','Microsoft YaHei','Helvetica', sans-serif;
   margin: 0;
   padding: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Roboto', 'Source Han Sans', 'Microsoft YaHei','Helvetica', sans-serif;
 }
 .mdl-demo .mdl-layout__header-row {
   padding-left: 40px;
