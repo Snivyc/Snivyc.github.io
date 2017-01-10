@@ -2,12 +2,12 @@
 layout: default
 ---
 
-<div class="mdl-grid mdl-shadow--2dp" style="max-width: 860px; background: white; padding: 0;" >
+<div class="mdl-grid mdl-shadow--2dp mdl-page" style="max-width: 860px; background: white; padding: 0;" >
    {% if page.img %}
     <img src={{ "/images-hq/" | prepend: site.baseurl | append : page.img}} alt="{{page.title}}"  style="width: 100%; height: 100%;">
     {% endif %}
     <div class="content" style="padding: 2em; width: 100%;">
-    <article style="max-width: 100%;">
+    <article>
         <h1 class="page-title">{{page.title}}</h1>
         {% if page.author %}
         <div class="meta"><span><i class="fa fa-calendar-o" aria-hidden="true"></i> {{page.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;&nbsp;</span><span><i class="fa fa-pencil-square-o" aria-hidden="true"></i> {{page.author}}</span></div>
