@@ -21,7 +21,7 @@ layout: compress
           {% else %}
             <a href="{{site.baseurl}}/" class="mdl-layout__tab">Home</a>
           {% endif %}
-          {% for my_page in site._pages %}
+          {% for my_page in site.pages %}
             {% if my_page.url == page.url %}
               <a href="{{my_page.url}}" class="mdl-layout__tab is-active">{{ my_page.title }}</a>
             {% else %}
