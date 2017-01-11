@@ -17,13 +17,18 @@ layout: compress
         </div>
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
           {% if page.url == '/' %}
-            <a href="#overview" class="mdl-layout__tab is-active">Home</a>
+            <a href="{{site.baseurl}}/" class="mdl-layout__tab is-active">Home</a>
           {% else %}
             <a href="{{site.baseurl}}/" class="mdl-layout__tab">Home</a>
           {% endif %}
-          <a href="{{site.baseurl}}/about/" class="mdl-layout__tab">About</a>
-          <a href="{{site.baseurl}}/contact/" class="mdl-layout__tab">Contact</a>
-          <a href="https://github.com/snivyc/karna" class="mdl-layout__tab">Project</a>
+          {% for my_page in site._pages %}
+            {% if my_page.url == page.url %}
+              <a href="{{my_page.url}}" class="mdl-layout__tab is-active">{{ my_page.title }}</a>
+            {% else %}
+              <a href="{{my_page.url}}" class="mdl-layout__tab">{{ my_page.title }}</a>
+            {% endif %}
+          {% endfor %}
+          <a href="https://github.com/snivyc/mdl" class="mdl-layout__tab">Project</a>
           </button>
         </div>
       </header>
