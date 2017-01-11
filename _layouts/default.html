@@ -17,18 +17,28 @@ layout: compress
         </div>
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
           {% if page.url == '/' %}
-            <a href="{{site.baseurl}}/" class="mdl-layout__tab is-active">Home</a>
+            <a href="{{site.baseurl}}/" class="mdl-layout__tab is-active">HOME</a>
           {% else %}
-            <a href="{{site.baseurl}}/" class="mdl-layout__tab">Home</a>
+            <a href="{{site.baseurl}}/" class="mdl-layout__tab">HOME</a>
           {% endif %}
-          {% for my_page in site.pages %}
+<!--           {% for my_page in site.pages %}
             {% if my_page.url == page.url %}
               <a href="{{my_page.url}}" class="mdl-layout__tab is-active">{{ my_page.title }}</a>
             {% else %}
               <a href="{{my_page.url}}" class="mdl-layout__tab">{{ my_page.title }}</a>
             {% endif %}
-          {% endfor %}
-          <a href="https://github.com/snivyc/mdl" class="mdl-layout__tab">Project</a>
+          {% endfor %} -->
+          {% if page.url == '/ABOUT/' %}
+            <a href="{{site.baseurl}}/ABOUT/" class="mdl-layout__tab is-active">ABOUT</a>
+          {% else %}
+            <a href="{{site.baseurl}}/ABOUT/" class="mdl-layout__tab">ABOUT</a>
+          {% endif %}
+          {% if page.url == '/CONTACT/' %}
+            <a href="{{site.baseurl}}/CONTACT/" class="mdl-layout__tab is-active">CONTACT</a>
+          {% else %}
+            <a href="{{site.baseurl}}/CONTACT/" class="mdl-layout__tab">CONTACT</a>
+          {% endif %}
+          <a href="https://github.com/snivyc/mdl" class="mdl-layout__tab">PROJIECT</a>
           </button>
         </div>
       </header>
