@@ -16,7 +16,11 @@ layout: compress
           <h5>没技术的死宅</h5>
         </div>
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-          <a href="{{site.baseurl}}/" class="mdl-layout__tab">Home</a>
+          {% if page.url == '/' %}
+            <a href="#overview" class="mdl-layout__tab is-active">Home</a>
+          {% else %}
+            <a href="{{site.baseurl}}/" class="mdl-layout__tab">Home</a>
+          {% endif %}
           <a href="{{site.baseurl}}/about/" class="mdl-layout__tab">About</a>
           <a href="{{site.baseurl}}/contact/" class="mdl-layout__tab">Contact</a>
           <a href="https://github.com/snivyc/karna" class="mdl-layout__tab">Project</a>
