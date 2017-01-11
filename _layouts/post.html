@@ -6,7 +6,7 @@ layout: default
    {% if page.img %}
     <img src={{ "/images-hq/" | prepend: site.baseurl | append : page.img}} alt="{{page.title}}"  style="width: 100%; height: 100%;">
     {% endif %}
-    <div class="content" style="padding: 2em; width: 100%;">
+    <div class="content" style="padding: 2em; width: 100%; word-break: break-all;">
     <article>
         <h1 class="page-title">{{page.title}}</h1>
         {% if page.author %}
