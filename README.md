@@ -22,21 +22,6 @@ Now, go to settings and check the **Github Pages** section. You should see a URL
 
 This process will host the theme as a **Project Page**. You can also download the files for local development. 
 
-The default theme will look like this
-
-![webjeda karna jekyll theme](/images/karna-jekyll-theme-screenshot.png)
-
-
-
-A sample post would look like this
-
-![webjeda karna jekyll theme sidebar](/images/post.png)
-
-
-This theme is made especially for smartphones.
-
-![webjeda karna responsive jekyll theme](/images/karna-responsive-jekyll-theme.png)
-
 # Development
 Make changes to the **master** branch and create a pull request. Do not use **gh-pages** branch as it is used to host the theme.
 
