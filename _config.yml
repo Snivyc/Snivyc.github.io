@@ -5,7 +5,7 @@ url: https://snivyc.github.io/
 permalink: ':title/'
 
 markdown: kramdown
-baseurl: "/mdl"
+baseurl: ""
 
 
 sass:
